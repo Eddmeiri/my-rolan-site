@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Rolan 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts"></div>
+
+  <section id="lockPage" class="page active">
+    <div class="card lock-card">
+      <div class="teddy big">🧸</div>
+      <div class="broken-heart">💔</div>
+      <h1>حطي كلمة السر اللي بينا عشان القلب يتجمع</h1>
+      <p class="subtitle">Enter our secret word, princess 💕</p>
+      <input type="password" id="passwordInput" placeholder="اكتبي كلمة السر هون..." />
+      <button onclick="checkPassword()">افتحي العالم الوردي ✨</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+  </section>
+
+  <section id="homePage" class="page">
+    <div class="card">
+      <div class="emoji-line">🧸💗🎀✨🌸</div>
+      <h1>اهلا رولان</h1>
+      <p>
+        هاي مش مجرد صفحة، هاي مساحة كيوت معمولِة مخصوص إلك،
+        فيها دلع، ضحك، حب، شوية تخبيص رومانسي، ودبدوب مستلم الإدارة كلها.
+      </p>
+      <p>
+        رسميًا: تم افتتاح مدينة رولان الوردية،
+        والدخول مسموح فقط لألطف بنت بالعالم.
+      </p>
+      <div class="buttons">
+        <button onclick="showPage('letterPage')">ادخلي الرسالة 💌</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="letterPage" class="page">
+    <div class="card">
+      <div class="emoji-line">💌💗🌷</div>
+      <h1>رسالة حب لرولان</h1>
+      <p>
+        رولان، من وين بدي ابلش وانا كل ما احاول اوصفك بحس الكلام يصير مرتبك قدامك؟
+        انتي مو بس شخص حلو، انتي جو كامل. انتي ضحكة، راحة، دلع، ومشكلة صغيرة
+        لقلبي لأنه من يوم ما عرفك صار ما يسمع الكلام.
+      </p>
+      <p>
+        بحب فيكي اشياء كثير، الكبيرة والصغيرة، الواضحة والمخفية.
+        بحب كيف وجودك يغير المزاج، وكيف اسمك لحاله بعطيني شعور حلو،
+        وكيف انتي قادرة تخلي اليوم العادي يصير ألطف.
+      </p>
+      <p>
+        ومعك حتى المزح يصير احلى، والتفاصيل تصير غالية،
+        وبصراحة انتي كيوت بطريقة مستفزة شوي، يعني الواحد بده يضل يدللك
+        ويحكي عنك ويعملك صفحات ومفاجآت وما يخلص.
+      </p>
+      <p>
+        ولو بيدي، كان عملتلك عالم كامل لونه زهري،
+        كله دبدوبات وقلوب ولمعات، وكل زاوية فيه تحكي:
+        رولان مدللة رسميًا.
+      </p>
+      <p>
+        بحبك يا رولان، حب فيه مشاعر، وفيه ضحك،
+        وفيه رغبة كل يوم اني اكون سبب ولو صغير في ابتسامتك.
+      </p>
+      <div class="buttons">
+        <button onclick="showPage('homePage')">رجوع</button>
+        <button onclick="showPage('funPage')">الصفحة الكيوت 😂</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="funPage" class="page">
+    <div class="card">
+      <div class="emoji-line">😂💖🧸</div>
+      <h1>حقائق مهمة جدًا عن رولان</h1>
+      <div class="facts">
+        <div class="fact">رولان كيوت بزيادة</div>
+        <div class="fact">الاعتراض مرفوض</div>
+        <div class="fact">القلب وافق بدون نقاش</div>
+        <div class="fact">الدبدوب يشهد على الجمال</div>
+        <div class="fact">الضحكة تسبب انهيار مشاعر</div>
+        <div class="fact">ممنوع تكوني هيك لطيفة</div>
+      </div>
+      <div class="buttons">
+        <button onclick="showPage('letterPage')">رجوع</button>
+        <button onclick="showPage('surprisePage')">المفاجأة 🎁</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="surprisePage" class="page">
+    <div class="card">
+      <div class="teddy">🧸</div>
+      <div class="emoji-line">🎀💗✨</div>
+      <h1>المفاجأة الأخيرة</h1>
+      <p>
+        النتيجة الرسمية بعد الفحص:<br />
+        رولان ألطف بنت، أكيت بنت، والقلب خسر المعركة بالكامل 💕
+      </p>
+
+      <button onclick="toggleGift()">افتحي الهدية</button>
+
+      <div id="giftBox" class="gift hidden">
+        <p>انتي احلى هدية، واحلى صدفة، واحلى شعور دخل القلب ✨</p>
+      </div>
+
+      <div class="music-box">
+        <p>اضغطي هون عشان تشتغل الأغنية 🎵</p>
+        <button onclick="openSong()">شغلي الأغنية من يوتيوب</button>
+      </div>
+
+      <div class="video-box">
+        <p class="video-title">قلبي مرتاح 💗</p>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/oB5q2qpRxKA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="buttons">
+        <button onclick="showPage('funPage')">رجوع</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
